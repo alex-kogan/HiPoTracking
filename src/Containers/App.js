@@ -38,6 +38,25 @@ class App extends Component {
 			<div className='w-100'>
 				<div className='fl w-80'>
 					<HipoTable hipos={sortedHipos} headerClick={this.onHeaderClick} sortTableBy={this.state.sortTableBy}/>
+
+					<h2>Phone numbers</h2>
+					<div className="rTable">
+						<div className="rTableRow">
+							<div className="rTableHead"><strong>Name</strong></div>
+							<div className="rTableHead">Telephone</div>
+							<div className="rTableHead">Alex</div>
+						</div>
+						<div className="rTableRow">
+							<div className="rTableCell">John</div>
+							<div className="rTableCell"><a href="tel:0123456785">0123 456 785</a></div>
+							<div className="rTableCell">Alex</div>
+						</div>
+						<div className="rTableRow">
+							<div className="rTableCell">Cassie</div>
+							<div className="rTableCell"><a href="tel:9876532432">9876 532 432</a></div>
+							<div className="rTableCell">Alex</div>
+						</div>
+					</div>
 				</div>
 				<div className='tc fl w-20'>
 					<Button outline color="info" onClick={this.onSortClearClick}>Clear sort</Button>
